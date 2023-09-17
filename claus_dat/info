@@ -1,8 +1,22 @@
-CLAUS (Cloud over Auckland, Australia and US Shores) Dataset
-This collection of satellite imagery was constructed to support the development project. The EO Browser application of the Sentinel Hub provided an easy and collection access to these images,
-that allows for visualising the data from numerous satellite and data collections instantly.
+The CLAUS (Cloud over Auckland, Australia and US Shores) Dataset is a collection of satellite imagery constructed to support the development project. 
+The EO Browser application of the Sentinel Hub provided an easy and collection access to these images, that allows for visualising the data from numerous satellites 
+and data collections instantly.
 
-The dataset contains high-resolution images of the four regions of interest: Hauraki Gulf (HG) and Mount John (MJ) within New Zealand, Lake Tahoe (TA) in US, 
-and Lake Tuggeranong (TU) in Australia.
+The dataset contains high-resolution images of the four regions of interest (RoI): Hauraki Gulf (HG) and Mount John (MJ) within New Zealand, Lake Tahoe (TA) in US, 
+and Lake Tuggeranong (TU) in Australia. These are grouped based on the sensor used (l8-9_l1 for Landsat 8-9, s2a_msil1c for Sentinel-2 Level 1), 
+and the period of acquisition which ranges from Jan 1, 2022 until Jun 30, 2023 (H1 or H2 for every year).
+
+A file naming connvention was implemented making the filenames more informative, i.e., 
+
+CLS_MJ_2500X1254px_16m_S2A_MSIL1C_20220814_100CC
+
+CLS          - to denote the clearshore project
+MJ           - the RoI
+2500X1254px  - the image size
+16m          - the projected resolution (extracted from the EO Browser platform)
+S2A_MSIL1C   - the sensor that acquired the image
+20220814     - the date of the acquisition following the YYYYMMDD format.
+100CC        - the estimated cloud cover percentage calculated as an average of all the cloud cover percentage (as provided by the EO Browser platform) for the day.
+
 
 (to be updated)
